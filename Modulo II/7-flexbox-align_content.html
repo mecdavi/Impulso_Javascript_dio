@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../Modulo II/js/6-flexbox_script.js"></script>
+        <style>
+            body{
+                font-size: 1em;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+            }
+            #flex-container{
+                display: flex;
+                list-style: none;
+                background: orange;
+                width: 300px;
+                height: 300px;
+                align-items:stre;
+                flex-direction:row;
+            }
+            .flex-item{
+                width: 50px;
+                height: 50px;
+                background-color: crimson;
+                text-align: center;
+                line-height: 50px;
+            }
+            input{
+                margin-right: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul id="flex-container">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+            </ul>        
+        </header>
+        
+        <main>
+            <article>
+                <section class="caixa">
+                    <h3>align-items</h3>
+                    <p> É uma propriedade do flexbox que permite alinhar o conteudo no eixo horizontal dentro do container</p></section>
+            </article>
+            <section>
+                <fieldset>
+                    <legend>align-itens</legend>
+                    <label>center</label>
+                    <input type="radio"  name="align" onclick="justifycontent('center')">
+
+                    <label>flex-start</label>
+                    <input type="radio"  name="align" onclick="justifycontent('stretch')">
+
+                    <label>flex-end</label>
+                    <input type="radio"  name="align" onclick="justifycontent('flex-end')">
+
+                    <label>stretch</label>
+                    <input type="radio"  name="align" onclick="justifycontent('stretch')">
+            
+                    <label>baseline</label>
+                    <input type="radio"  name="align" onclick="justifycontent('baseline')">
+                </fieldset>
+            </section>
+        </main>
+        
+        
+    </body>
+</html>

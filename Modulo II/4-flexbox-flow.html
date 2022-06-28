@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../Modulo II/js/4-flexbox_script.js"></script>
+        <style>
+            :root{
+                --direcao : ;
+                --quebra : ;
+            }
+            body{
+                font-size: 1em;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #flex-container{
+                margin:0;
+                padding: 0;
+                display: flex;
+                list-style: none;
+                height: 270px;
+                background-color: orange;
+                flex-flow: var(--direcao) var(--quebra);
+                max-width: 500px;
+            }   
+            .flex-item{
+                margin-right:1px;
+                text-align: center;
+                border: 1px solid;
+                background-color: crimson;
+                height: 150px;
+                width: 150px;
+                line-height: 50px;
+                font-size: 20ox;
+                color: antiquewhite;
+            }
+
+            .caixa{
+                padding-bottom: 10px;
+                border-bottom: 2px solid #ccc;
+                max-width: 520px;
+            }
+
+            input{
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul id="flex-container">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+                <li class="flex-item">4</li>
+                <li class="flex-item">5</li>
+            </ul>        
+        </header>
+        
+        <main>
+            <article>
+                <section class="caixa">
+                    <h3>flex wrap</h3>
+                    <p> wrap é uma propriedade do flebox que permite manipular as quebras de linha. <strong>no-wrap</strong> comprime os items no container, <strong>wrap</strong> quebra os item para biaxo, <strong>wrap-reverse</strong> quebra os elementos para cima</p>
+                    <fieldset> 
+                        <legend>flex-flow</legend>   
+                        <form action="">
+                            <label for="">row</label>
+                            <input type="radio" name="flex-direction" onclick="flexdirection('row')">
+
+                            <label for="">row-reverse</label>
+                            <input type="radio" name="flex-direction" onclick="flexdirection('row-reverse')">
+
+                            <label for="">column</label>
+                            <input type="radio" name="flex-direction" onclick="flexdirection('column')">
+
+                            <label for="">column-reverse</label>
+                            <input type="radio" name="flex-direction" onclick="flexdirection('column-reverse')">
+
+                            <br>
+                            <br>
+                            <label for="">Wrap</label>
+                            <input type="radio" onclick="flexwrap('wrap')" name="flex-wrap" >  
+
+                            <label for="">no-wrap</label>
+                            <input type="radio" onclick="flexwrap('nowrap')" name="flex-wrap"> 
+
+                            <label for="">wrap-reverse</label>
+                            <input type="radio" onclick="flexwrap('wrap-reverse')" name="flex-wrap" > 
+                            <br>
+                            <br>
+                            <label for="">Max-width</label>
+                            <input type="range" name="range" onmousemove="rangeValue()" id="range" min='500' max='1080' value="500">
+                            <label for="" id="rangeVal"></label>
+                        </form>
+                    </fieldset>
+                </section>
+            </article>
+        </main>
+        
+        
+    </body>
+</html>

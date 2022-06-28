@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../Modulo II/js/5-flexbox_script.js"></script>
+        <style>
+            body{
+                font-size: 1em;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+            }
+            #flex-container{
+                display: flex;
+                list-style: none;
+                background: orange;
+                width: 300px;
+                height: 300px;
+                justify-content:space-between;
+                flex-direction: column;
+            }
+            .flex-item{
+                width: 50px;
+                height: 50px;
+                background-color: crimson;
+                text-align: center;
+                line-height: 50px;
+            }
+            input{
+                margin-right: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul id="flex-container">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+            </ul>        
+        </header>
+        
+        <main>
+            <article>
+                <section class="caixa">
+                    <h3>justify-content</h3>
+                    <p> justify-content é uma propriedade do flexbox que permite organizar o conteudo dentro do container, podendo ser alinhado no centro, final, inicio e com espacamento entre eles, sendo o ultimo calaculado atraves do espaço restante dentro do container</p>            </section>
+            </article>
+            <section>
+                <fieldset>
+                    <legend>justify-content</legend>
+                    <label>center</label>
+                    <input type="radio"  name="justify" onclick="justifycontent('center')">
+
+                    <label>flex-start</label>
+                    <input type="radio"  name="justify" onclick="justifycontent('flex-start')">
+                    
+                    <label>flex-end</label>
+                    <input type="radio"  name="justify" onclick="justifycontent('flex-end')">
+                    
+                    <label>space-around</label>
+                    <input type="radio"  name="justify" onclick="justifycontent('space-around')">
+
+                    <label>space-between</label>
+                    <input type="radio"  name="justify" onclick="justifycontent('space-between')">
+
+                    <label>baseline</label>
+                    <input type="radio"  name="justify" onclick="justifycontent('baseline')">
+                </fieldset>
+            </section>
+        </main>
+        
+        
+    </body>
+</html>
