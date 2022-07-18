@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body{
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(44, 44, 44);
+}
+
+/* ------------- layout -------------- */
+
+/* ------------ cabeçalho -------------------- */
+header{
+    background-color: #122A57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+    float: left;
+    padding: 5px;
+}
+header ul li a{
+    display: block;
+    text-decoration: none;
+    float: right;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+
+}
+header ul li a:hover{
+    background-color:white;
+    border-radius: 20px;
+    color: #122A57;
+}
+
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: 0 auto;
+    width: 100%;
+}
+header .list-items{
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+}
+header .menu{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----------- conteudo -------------------- */
+
+.conteudo{
+    height: 100vh;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.conteudo .texto-apre{
+    min-height: 200px;
+    width: 100%;
+}
+
+.texto-apre h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #122A57;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px;
+    display: block;
+    width: 220px;
+    text-decoration: none;
+    height: 50px;
+}
+
+#quemsomos .flex-container{
+    flex-direction: column;
+}
+#quemsomos{
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quemsomos h2{
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quemsomos h2::before{
+    content:'';
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+#quemomos img{
+   min-width: 420px; 
+}
+
+.container-externo{
+    background-color: #122A57;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicos h2{
+    color: #ffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.list-servicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-servico img,.item-servico a{
+    display: block;
+    margin: 30px auto;
+}
+
+.item-servico img{
+    width: 80%;
+}
+
+.item-servico{
+    color: #ccc;
+}
+
+.item-servico a{
+    color:#122A57;
+    text-decoration: none;
+    background-color: #ffff;
+    width: 140px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+.item-servico p{
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ------------ Planos ------------ */
+#planos{
+    margin: 0 auto;
+    flex-direction: column;
+    min-height:  100vh;;
+}
+#planos h2{
+    margin-top: 20px;
+}
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    justify-content: space-around;
+}
+.item-plano h2::after{
+    content: "";
+
+}
+.item-plano{
+    flex:1;
+    border: #122A57 5px solid;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.item-plano .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item-plano h3{
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-plano h3::after{
+    content: '';
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    border-radius: 30%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.item-plano ul{
+    list-style: square;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px;
+}
+
+.item-plano ul li::before{
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #122A57;
+    margin-right: 5px
+
+}
+/* ------------- rodape ---------------- */
+footer{
+    background-color: #122A57;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.flex-container .footer{
+    justify-content: space-between;
+}
+
+.footer p{
+    color: #fff;
+}
+
+/* Mobile */

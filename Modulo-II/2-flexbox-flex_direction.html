@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../Modulo II/js/2-flexbox_script.js"></script>
+        <style>
+            body{
+                font-size: 1em;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #flex-container{
+                margin:0;
+                padding: 0;
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                height: 270px;
+                
+            }   
+            .flex-item{
+                text-align: center;
+                border: 1px solid;
+                background-color: crimson;
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                font-size: 20ox;
+                color: antiquewhite;
+            }
+
+            .caixa{
+                padding-bottom: 10px;
+                border-bottom: 2px solid #ccc;
+                max-width: 520px;
+            }
+
+            input{
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul id="flex-container">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+                <li class="flex-item">4</li>
+                <li class="flex-item">5</li>
+            </ul>        
+        </header>
+        
+        <main>
+            <article>
+                <section class="caixa">
+                    <h3>flex direction</h3>
+                    <p> Muda o alinhamento dos items, podendo ser ordenado no eixo X e Y. Tambem podem ser invertidos.</p>
+                    <fieldset> 
+                        <legend>flex-direction</legend>   
+                        <form action="">
+                            <label for="">row</label><input type="radio" onclick="flexDirection('row')" name="flex-direction" id="row"> 
+                            <label for="">row-reverse</label><input type="radio" onclick="flexDirection('row-reverse')" name="flex-direction" id="rowr"> 
+                            <label for="">column</label><input type="radio" onclick="flexDirection('column')" name="flex-direction" id="coloumn"> 
+                            <label for="">column-reverse</label><input type="radio" onclick="flexDirection('column-reverse')" name="flex-direction" id="coloumnr"> 
+                        </form>
+                    </fieldset>
+                </section>
+            </article>
+        </main>
+        
+        
+    </body>
+</html>

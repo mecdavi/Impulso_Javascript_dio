@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../Modulo II/js/6-flexbox_script.js"></script>
+        <style>
+            body{
+                font-size: 1em;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+            }
+            header.flex-container{
+                display: flex;
+                list-style: none;
+                background: orange;
+                width: 400px;
+                height: 400px;
+                /* align-items:stretch; */
+                flex-wrap: wrap;
+                /* flex-direction:row; */
+                flex-direction: row;
+            }
+            .flex-start{
+                align-content: flex-start;
+            }
+            .center{
+                align-content: center;
+            }
+            .flex-end{
+                align-content: flex-end;
+            }
+            .around{
+                align-content: space-around;
+            }
+            .bet{
+                align-content: space-between;
+            }
+            .flex-item{
+                background-color: crimson;
+                flex: 1;
+                text-align: center;
+                line-height: 50px;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>stretch</p>
+        <header class="flex-container">
+            <div class="flex-item">Lorem ipsum dolor sit amet consectetur,</div>
+            <div class="flex-item">loremipsum dolor</div>
+            <div class="flex-item">ipsum dolor sit amet</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+        </header>
+        <br><br>
+        <p>Start</p>
+        <header class="flex-container flex-start">
+            <div class="flex-item">Lorem ipsum dolor sit amet consectetur,</div>
+            <div class="flex-item">loremipsum dolor</div>
+            <div class="flex-item">ipsum dolor sit amet</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+        </header>
+        <br><br>
+        <p>center</p>
+        <header class="flex-container center">
+            <div class="flex-item">Lorem ipsum dolor sit amet consectetur,</div>
+            <div class="flex-item">loremipsum dolor</div>
+            <div class="flex-item">ipsum dolor sit amet</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+        </header>
+        <br><br>
+        <p>end</p>
+        <header class="flex-container flex-end">
+            <div class="flex-item">Lorem ipsum dolor sit amet consectetur,</div>
+            <div class="flex-item">loremipsum dolor</div>
+            <div class="flex-item">ipsum dolor sit amet</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+        </header>
+        <br><br>
+        <p>Space-around</p>
+        <header class="flex-container around">
+            <div class="flex-item">Lorem ipsum dolor sit amet consectetur,</div>
+            <div class="flex-item">loremipsum dolor</div>
+            <div class="flex-item">ipsum dolor sit amet</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+        </header>
+        <br><br>
+        <p>between</p>
+        <header class="flex-container bet">
+            <div class="flex-item">Lorem ipsum dolor sit amet consectetur,</div>
+            <div class="flex-item">loremipsum dolor</div>
+            <div class="flex-item">ipsum dolor sit amet</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+            <div class="flex-item">ipsum dolor</div>
+        </header>
+    </body>
+</html>
